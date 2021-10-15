@@ -3,11 +3,10 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="loginStyle.css"> 
 
+<?php include 'navbarAdmin.php';?>
+
 <div class="wrapper fadeInDown">
   <div id="formContent">
-
-  <p style="margin-top: 10px" class="h2">test</p>
-
-
+    <p style="margin-top: 10px" class="h2">Home del administrador</p>
   </div>
 </div>

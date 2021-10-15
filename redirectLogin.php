@@ -15,9 +15,9 @@
          }
 
          if($tipoUsuario == "Administrador"){
-            $url = "http://localhost/obligatorio/menuPrincipalAdmin.php";
+            $url = "http://localhost/obligatorio/obligatorioPHP/menuPrincipalAdmin.php";
          }else{
-            $url = "http://localhost/obligatorio/menuPrincipalCliente.php";
+            $url = "http://localhost/obligatorio/obligatorioPHP/menuPrincipalCliente.php";
          }
 
          mysqli_close($link);

@@ -5,14 +5,11 @@
 
 <div class="wrapper fadeInDown">
   <div id="formContent">
-
-  <p style="margin-top: 10px" class="h2">Carrito de compras</p>
-
+    <p style="margin-top: 10px" class="h2">Carrito de compras</p>
     <form action="redirectLogin.php" method= "POST">
       <input type="text" id="email" class="fadeIn second" name="email" placeholder="Correo electrónico">
-      <input type="text" id="contra" class="fadeIn third" name="contra" placeholder="Contraseña">
+      <input type="password" id="contra" class="fadeIn third" name="contra" placeholder="Contraseña">
       <input style="margin-top: 40px" type="submit" class="fadeIn fourth" value="Ingresar">
     </form>
-
   </div>
 </div>

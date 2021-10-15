@@ -3,10 +3,10 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="loginStyle.css"> 
 
-<?php include 'navbarAdmin.php';?>
+<?php include 'navbarCliente.php';?>
 
 <div class="wrapper fadeInDown">
   <div id="formContent">
-    <p style="margin-top: 10px" class="h2">test2</p>
+    <p style="margin-top: 10px" class="h2">Home del cliente</p>
   </div>
 </div>
