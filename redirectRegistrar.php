@@ -14,7 +14,7 @@
          $resultado=mysqli_query($link,"insert into usuario(documento, contra, nombre, apellido, edad, tipoUsuario) VALUES('$documento', '$contra', '$nombre','$apellido', $edad, '$tipoUsuario')");
          mysqli_close($link);
 
-         $url = "http://localhost/obligatorio/obligatorioPHP/menuPrincipalAdministrador.php";
+         $url = "http://localhost/obligatorio/obligatorioPHP/menuPrincipalAdmin.php";
       ?>
       <meta http-equiv="refresh" content=<?php echo "'0; url =".$url."'";?> />
    </head>

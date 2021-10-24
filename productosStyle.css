@@ -1,0 +1,38 @@
+.blanco
+{
+  background-color: whitesmoke;
+}
+.imagen
+{
+  max-width: 380px;
+  max-height: 300px;
+  background-repeat: no-repeat;
+  padding: 25px 25px 10px 25px; 
+}
+
+.icon
+{
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+.center
+{
+  padding: 0px !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.cantidad
+{
+  width: 60px !important;
+  margin-bottom: 10px;
+}
+
+.hover
+{
+  cursor: pointer;
+}
