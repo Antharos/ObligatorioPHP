@@ -7,10 +7,10 @@
   <div id="formContent">
     <p style="margin-top: 10px" class="h2">Carrito de compras</p>
     <form action="redirectLogin.php" method= "POST">
-      <input type="text" id="email" class="fadeIn second" name="email" placeholder="Correo electrónico">
+      <input type="text" id="documento" class="fadeIn second" name="documento" placeholder="Documento">
       <input type="password" id="contra" class="fadeIn third" name="contra" placeholder="Contraseña">
-      <input style="margin-top: 40px" type="submit" class="fadeIn fourth" value="Ingresar">
+      <input style="margin-top: 40px"  class="fadeIn fourth" value="Ingresar" type="submit">
     </form>
-    <a style="margin-bottom: 20px" href="#" class="link-primary">Registrarse</a>
+    <a style="margin-bottom: 20px" href="registrar.php" class="link-primary">Registrarse</a>
   </div>
 </div>
