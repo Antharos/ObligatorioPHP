@@ -4,23 +4,42 @@
 <link rel="stylesheet" href="loginStyle.css">
 <link rel="stylesheet" href="productosStyle.css"> 
 
-<?php include 'navbarAdmin.php';?>
+<?php 
+  include 'navbarAdmin.php';
+  include("conexion.php");
+?>
+
 <?php
-  $fotos = array("http://localhost/obligatorio/obligatorioPHP/gato1.jpg");
-  $test = array(1, 2, 4,5 ,6 ,7,8,9,10);
+  $link=Conectarse();
+  $resultado=mysqli_query($link,"SELECT * FROM producto");
+  mysqli_close($link);
 ?>
 <div class="wrapper fadeInDown">
   <div class="container blanco">
     <div class='row'>
       <?php
-        foreach ($test as $valor) { 
+        while ($valor = mysqli_fetch_array($resultado)) {
+          $url = $valor['url'];
+          $nombre = $valor['nombre'];
+          $precio = $valor['precio'];
+          $idProducto =  $valor['idProducto'];
+          $cantidad =  $valor['cantidad'];
             echo "
             <div class='col-4 center'>
-              <img class= 'imagen' src='http://localhost/obligatorio/obligatorioPHP/fotos/gato1.jpg'>
-              <img class= 'icon hover' src='./open-iconic/svg/pencil.svg'>
-              <img class= 'icon hover' src='./open-iconic/svg/trash.svg'>
-              <p>Nombre</p>
-              <p>precio</p>
+              <img class= 'imagen' src='$url'>
+              <form action= 'modificarProducto.php' method='POST' style='float: left; display:flex'>
+                <input type='hidden' name='nombre' value='$nombre'>
+                <input type='hidden' name='precio' value='$precio'>
+                <input type='hidden' name='cantidad' value='$cantidad'>
+                <input type='hidden' name='url' value='$url'>
+                <button class='btn' type='submit'><img id='function' class= 'icon hover' src='./open-iconic/svg/pencil.svg'></button>
+              </form>
+              <form action= 'manejoDeProductosDelete.php' method='POST'>
+                <input type='hidden' name='id' value='$idProducto'>
+                <button class='btn' type='submit'><img id='function' class= 'icon hover' src='./open-iconic/svg/trash.svg'></button>
+              </form>
+              <p>$nombre</p>
+              <p>$precio</p>
             </div>"; 
         }
       ?>

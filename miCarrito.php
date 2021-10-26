@@ -11,28 +11,23 @@
 ?>
 
 <?php
-  $link=Conectarse();
-  $resultado=mysqli_query($link,"select * from producto");
-  mysqli_close($link);
+  $test = array(1, 2, 4,5 ,6 ,7,8,9,10);
 ?>
 <div class="wrapper fadeInDown">
   <div class="container blanco">
     <div class='row'>
       <?php
-        while ($valor = mysqli_fetch_array($resultado)) 
+        foreach ($test as $valor)) 
         { 
-          $url = $valor['url'];
-          $nombre = $valor['nombre'];
-          $precio = $valor['precio'];
             echo "
             <div class='col-4 center'>
-              <img class= 'imagen' src='$url'>
+              <img class= 'imagen' src=''>
               <form action= 'listadoDeProductosCode.php' method='POST'>
                 <input class='cantidad' name='cantidad' min='0' name='form-0-quantity' value='1' type='number'>
                 <button class='btn' type='submit'><img id='function' class= 'icon hover' src='./open-iconic/svg/cart.svg'></button>
               </form>
-              <p>$nombre</p>
-              <p>$precio</p>
+              <p>nombre</p>
+              <p>precio</p>
             </div>"; 
         }
       ?>
