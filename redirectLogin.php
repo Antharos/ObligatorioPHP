@@ -17,9 +17,9 @@
                $tipoUsuario= $filas["tipoUsuario"];
             }
             if($tipoUsuario == "Administrador"){
-               $url = "http://localhost/obligatorio/obligatorioPHP/menuPrincipalAdmin.php";
+               $url = "http://localhost/obligatorio/obligatorioPHP/manejoDeProductos.php";
             }else{
-               $url = "http://localhost/obligatorio/obligatorioPHP/menuPrincipalCliente.php";
+               $url = "http://localhost/obligatorio/obligatorioPHP/listadoDeProductosCliente.php";
             }
          }
 
