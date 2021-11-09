@@ -8,7 +8,10 @@
   include("conexion.php");
 
   $link=Conectarse();
-  $resultado=mysqli_query($link,"select * from concreta");
+  $resultado=mysqli_query($link,"select * from concreta INNER JOIN producto ON concreta.idProducto = producto.idProducto");
+
+  //$resultado=mysqli_query($link,"SELECT * FROM concreta INNER JOIN producto ON concreta.idProducto = producto.idProducto WHERE documento = $documento");
+ 
   mysqli_close($link);
 ?>
 

@@ -8,7 +8,7 @@
   include("conexion.php");
 
   $link=Conectarse();
-  $resultado=mysqli_query($link,"select * from usuario where habilitado is NULL");
+  $resultado=mysqli_query($link,"select * from usuario  where habilitado is NULL");
   mysqli_close($link);
 ?>
 

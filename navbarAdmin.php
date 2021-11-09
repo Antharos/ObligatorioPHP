@@ -15,7 +15,7 @@
           <a class="nav-link active" aria-current="page" href="./altaProducto.php">Alta de producto</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Compras</a>
+          <a class="nav-link active" aria-current="page" href="./historialDeComprasAdmin.php">Compras</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="./usuarios.php">Usuarios</a>

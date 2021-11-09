@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="feedbackStyle.css"> 
 
 <?php 
-  include 'navbarAdmin.php';
+  include 'navbarCliente.php';
   include("conexion.php");
 
   session_start();
@@ -35,21 +35,21 @@
           <div class="row">
             <div class="col">
               <label for="exampleInputEmail1">Nombre</label>
-              <input disabled value="<?php echo "$nombre" ?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input disabled value="<?php echo "$nombre" ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="col">
               <label for="exampleInputEmail1">Apellido</label>
-              <input disabled value="<?php echo "$apellido" ?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input disabled value="<?php echo "$apellido" ?>"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
           </div>
           <div class="row" style="padding-top: 9px !important">
             <div class="col">
               <label  for="exampleInputEmail1">Documento</label>
-              <input disabled value="<?php echo "$documento" ?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input disabled value="<?php echo "$documento" ?>"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="col">
               <label for="exampleInputEmail1">Edad</label>
-              <input disabled value="<?php echo "$edad" ?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input disabled value="<?php echo "$edad" ?>"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
           </div>
         </div>

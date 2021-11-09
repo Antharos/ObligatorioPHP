@@ -40,7 +40,7 @@
 <div class="container" style="max-width: 1429px !important">
   <div class="card text-center" style="margin-top:30px !important">
     <div class="card-header"> 
-      <p style="margin-top: 10px" class="h2"><b>Productos disponibles</b></p><br>
+      <p style="margin-top: 10px" class="h2"><b>Carrito de compras</b></p><br>
     </div>
     <div class='row'>
       <?php

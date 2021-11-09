@@ -6,35 +6,35 @@
 <link rel="stylesheet" href="productosStyle.css"> 
 
 <?php 
-  include 'navbarCliente.php';
+  include 'navbarAdmin.php';
   include("conexion.php");
-  
 ?>
-
-
 
 <?php
   $link=Conectarse();
-  $resultado=mysqli_query($link,"select * from producto");
+  session_start();
+  $documento = $_SESSION['documento'];
+  $resultado=mysqli_query($link,"SELECT * FROM concreta INNER JOIN producto ON concreta.idProducto = producto.idProducto");
+ 
   mysqli_close($link);
 ?>
-<div class="wrapper fadeInDown">
-  <div class="container blanco">
+<div class="container" style="max-width: 1429px !important">
+  <div class="card text-center" style="margin-top:30px !important">
+    <div class="card-header"> 
+      <p style="margin-top: 10px" class="h2"><b>Historial de compras</b></p><br>
+    </div>
     <div class='row'>
-    
       <?php
         while ($valor = mysqli_fetch_array($resultado)) 
         { 
           $url = $valor['url'];
           $nombre = $valor['nombre'];
           $precio = $valor['precio'];
+          $idProducto = $valor['idProducto'];
+
             echo "
             <div class='col-4 center'>
               <img class= 'imagen' src='$url'>
-              <form action= 'listadoDeProductosCode.php' method='POST'>
-                <input class='cantidad' name='cantidad' min='0' name='form-0-quantity' value='1' type='number'>
-                <button class='btn' type='submit'><img id='function' class= 'icon hover' src='./open-iconic/svg/cart.svg'></button>
-              </form>
               <p>$nombre</p>
               <p>$precio</p>
             </div>"; 
