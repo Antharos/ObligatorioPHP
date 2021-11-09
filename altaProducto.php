@@ -14,9 +14,9 @@
           echo "<img class= 'imagen' src='http://localhost/obligatorio/obligatorioPHP/uploads/defaultProduct.png'>"
       ?>
       <input type="file" name="imagenProducto" id="imagenProducto">
-      <input type="text" id="nombre" class="fadeIn second" name="nombre" placeholder="Nombre">
-      <input type="text" id="precio" class="fadeIn second" name="precio" placeholder="Precio">
-      <input type="text" id="cantidad" class="fadeIn second" name="cantidad" placeholder="Cantidad">
+      <input required type="text" id="nombre" class="fadeIn second" name="nombre" placeholder="Nombre">
+      <input required type="text" id="precio" class="fadeIn second" name="precio" placeholder="Precio">
+      <input required type="text" id="cantidad" class="fadeIn second" name="cantidad" placeholder="Cantidad">
       
       <input style="margin-top: 40px" type="submit" class="fadeIn fourth" value="Guardar">
   </div>

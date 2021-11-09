@@ -62,7 +62,7 @@
     </div>
     <div style="display:flex" class="center">
       <form action= 'miCarritoCode.php' method='POST'>
-        <input style="height:150px; width:600px; margin-top:30px" name="feedback"></input>
+        <input style="height:150px; width:600px; margin-top:30px" required name="feedback"></input>
         <button type="submit"style="margin-bottom: 20px" class="btn btn-primary">Comprar</button>
       </form>
     </div>

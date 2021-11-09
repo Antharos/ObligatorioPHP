@@ -2,7 +2,7 @@
 <html>
    <head> 
       <?php
-         
+
          $documento = $_POST['documento'];
          $contra = $_POST['contra'];
          $tipoUsuario = "";

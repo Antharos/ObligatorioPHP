@@ -32,17 +32,6 @@
                     <div class='col'>
                       <h4  style='margin-top: 10px; text-align: left' ><b>$nombre $apellido, $edad años, CI $documento</b></h4>
                     </div>
-                    
-                    <div class='col' style=' text-align:right !important' >
-                      <form style='float: right !important; margin-right: 15px' action= 'redirectAceptarUsuario.php' method='POST'>
-                        <input type='hidden' name='documento' value='$documento'>
-                        <button class='btn' type='submit'><img id='function' class= 'icon hover' src='./open-iconic/svg/check-lg.svg'></button>
-                      </form>
-                      <form style='float: right !important;' action= 'redirectRechazarUsuario.php' method='POST'>
-                        <input type='hidden' name='documento' value='$documento'>
-                        <button class='btn' type='submit'><img id='function' class= 'icon hover' src='./open-iconic/svg/x-circle.svg'></button>
-                      </form>
-                    </div>
                   </div>
                 </div>
               </form>

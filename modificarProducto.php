@@ -29,9 +29,9 @@
 
       <input type='hidden' name='idProducto' id="oldUrl" value=<?php echo "'$idProducto'" ?>>  
       <input type='hidden' name='oldUrl' id="oldUrl" value= <?php echo "'$url'" ?>>  
-      <input type="text" id="nombre" class="fadeIn second" name="nombre" placeholder="Nombre" value="<?php echo $nombre?>">
-      <input type="text" id="precio" class="fadeIn second" name="precio" placeholder="Precio" value="<?php echo $precio?>">
-      <input type="text" id="cantidad" class="fadeIn second" name="cantidad" placeholder="Cantidad" value="<?php echo $cantidad?>">
+      <input required type="text" id="nombre" class="fadeIn second" name="nombre" placeholder="Nombre" value="<?php echo $nombre?>">
+      <input required type="text" id="precio" class="fadeIn second" name="precio" placeholder="Precio" value="<?php echo $precio?>">
+      <input required type="text" id="cantidad" class="fadeIn second" name="cantidad" placeholder="Cantidad" value="<?php echo $cantidad?>">
       
       <input style="margin-top: 40px" type="submit" class="fadeIn fourth" value="Guardar">
   </div>
