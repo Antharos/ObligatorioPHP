@@ -3,7 +3,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="loginStyle.css"> 
 
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="./listadoDeProductosCliente.php">Home</a>
@@ -13,7 +12,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Perfil</a>
+          <a class="nav-link active" aria-current="page" href="./perfil.php">Perfil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="./miCarrito.php">Carrito de compras</a>

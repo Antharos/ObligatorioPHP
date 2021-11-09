@@ -11,6 +11,5 @@
       <input type="password" id="contra" class="fadeIn third" name="contra" placeholder="Contraseña">
       <input style="margin-top: 40px"  class="fadeIn fourth" value="Ingresar" type="submit">
     </form>
-    <a style="margin-bottom: 20px" href="registrar.php" class="link-primary">Registrarse</a>
   </div>
 </div>

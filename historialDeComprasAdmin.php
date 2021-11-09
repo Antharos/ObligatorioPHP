@@ -8,7 +8,10 @@
 <?php 
   include 'navbarCliente.php';
   include("conexion.php");
+  
 ?>
+
+
 
 <?php
   $link=Conectarse();
@@ -18,6 +21,7 @@
 <div class="wrapper fadeInDown">
   <div class="container blanco">
     <div class='row'>
+    
       <?php
         while ($valor = mysqli_fetch_array($resultado)) 
         { 

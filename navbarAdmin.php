@@ -18,10 +18,10 @@
           <a class="nav-link active" aria-current="page" href="#">Compras</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Usuarios</a>
+          <a class="nav-link active" aria-current="page" href="./usuarios.php">Usuarios</a>
         </li>
         <li class="nav-item"> 
-          <a class="nav-link active" aria-current="page" href="#">Feedback</a>
+          <a class="nav-link active" aria-current="page" href="./feedback.php">Feedback</a>
         </li>
       </ul>
     </div>

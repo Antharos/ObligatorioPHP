@@ -2,9 +2,13 @@
 <html>
    <head> 
       <?php
+         
          $documento = $_POST['documento'];
          $contra = $_POST['contra'];
          $tipoUsuario = "";
+
+         session_start();
+         $_SESSION["documento"]=$documento;
 
          include("conexion.php");
          $link=Conectarse();
@@ -17,6 +21,7 @@
          }else{
             while($filas = mysqli_fetch_array($resultado)){
                $tipoUsuario= $filas["tipoUsuario"];
+               $_SESSION["nombreUsuario"]=$filas["nombre"]." ".$filas["apellido"];
             }
             if($tipoUsuario == "Administrador"){
                $url = "http://localhost/obligatorio/obligatorioPHP/manejoDeProductos.php";
