@@ -11,26 +11,60 @@
 ?>
 
 <?php
-  $test = array(1, 2, 4,5 ,6 ,7,8,9,10);
+  session_start();
+  $carrito = $_SESSION['carrito'];
+  $link=Conectarse();
+  $arrayCarrito = array();
+
+  foreach($carrito as $key => $valor)
+  {
+    if($valor != 0)
+    {
+      $resultado = mysqli_query($link,"SELECT * FROM producto WHERE idProducto = $key ");
+      while ($valor = mysqli_fetch_array($resultado)) {
+        $array = array(
+          "idProducto" => $valor['idProducto'],
+          "nombre" => $valor['nombre'],
+          "precio" => $valor['precio'],
+          "cantidad" => $valor['cantidad'],
+          "url" => $valor['url'],
+    
+        );
+      }
+      array_push($arrayCarrito, $array);
+    }
+  }
+  
 ?>
-<div class="wrapper fadeInDown">
-  <div class="container blanco">
+
+<div class="container" style="max-width: 1429px !important">
+  <div class="card text-center" style="margin-top:30px !important">
+    <div class="card-header"> 
+      <p style="margin-top: 10px" class="h2"><b>Productos disponibles</b></p><br>
+    </div>
     <div class='row'>
       <?php
-        foreach ($test as $valor)) 
+        foreach ($arrayCarrito as $valor) 
         { 
+          $url = $valor['url'];
+          $nombre = $valor['nombre'];
+          $precio = $valor['precio'];
+          $idProducto = $valor['idProducto'];
+
             echo "
             <div class='col-4 center'>
-              <img class= 'imagen' src=''>
-              <form action= 'listadoDeProductosCode.php' method='POST'>
-                <input class='cantidad' name='cantidad' min='0' name='form-0-quantity' value='1' type='number'>
-                <button class='btn' type='submit'><img id='function' class= 'icon hover' src='./open-iconic/svg/cart.svg'></button>
-              </form>
-              <p>nombre</p>
-              <p>precio</p>
+              <img class= 'imagen' src='$url'>
+              <p>$nombre</p>
+              <p>$$precio</p>
             </div>"; 
         }
       ?>
+    </div>
+    <div style="display:flex" class="center">
+      <form action= 'miCarritoCode.php' method='POST'>
+        <input style="height:150px; width:600px; margin-top:30px" name="feedback"></input>
+        <button type="submit"style="margin-bottom: 20px" class="btn btn-primary">Comprar</button>
+      </form>
     </div>
   </div>
 </div>

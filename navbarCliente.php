@@ -16,10 +16,10 @@
           <a class="nav-link active" aria-current="page" href="#">Perfil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Carrito de compras</a>
+          <a class="nav-link active" aria-current="page" href="./miCarrito.php">Carrito de compras</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Historial de compras</a>
+          <a class="nav-link active" aria-current="page" href="./historialDeComprasCliente.php">Historial de compras</a>
         </li>
       </ul>
     </div>
